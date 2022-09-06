@@ -69,6 +69,17 @@ function generatePassword() {
     if (choseLowercase === true) {
     optionsCart.push(lowercase)
     }
+
+    var generatedPassword = ""
+
+    for (var i = 0; i < passwordLength; i++) {
+    var randomList = getRandomItem(optionsCart)
+    var randomCharacter = getRandomItem(randomList)
+    generatedPassword += randomCharacter
+    }
+    return generatedPassword
+  
+  
   
 
 // Add event listener to generate button
