@@ -42,6 +42,11 @@ function generatePassword() {
     break
   }}
 }
+ // User prompts
+ var choseNumbers = window.confirm("Would you like to include numbers?")
+ var choseSymbols = window.confirm("Would you like to include symbols?")
+ var choseUppercase = window.confirm("Would you like to include uppercase letters?")
+ var choseLowercase = window.confirm("Would you like to include lowercase letters?")
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
