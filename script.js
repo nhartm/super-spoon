@@ -56,6 +56,21 @@ function generatePassword() {
  var uppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
  var lowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+  // Apply user choice and pull from character lists
+  if (choseNumbers === true) { 
+    optionsCart.push(numbers)
+    }
+    if (choseSymbols === true) {
+    optionsCart.push(symbols)
+    }
+    if (choseUppercase === true) {
+    optionsCart.push(uppercase)
+    }
+    if (choseLowercase === true) {
+    optionsCart.push(lowercase)
+    }
+  
+
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
