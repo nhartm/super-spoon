@@ -79,11 +79,12 @@ function randomInt(min, max) {
     var randomList = getRandomItem(optionsCart)
     var randomCharacter = getRandomItem(randomList)
     generatedPassword += randomCharacter
-    }
-    return generatedPassword
+    } {return generatedPassword}
+    
   }
     
-  //Write password to the #password input
+ 
+    //Write password to the #password input
   function writePassword(){
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
